@@ -76,33 +76,35 @@ span#tema{
     margin-top: 15px;
 }
 
-main > section{
+main > section#apresentacao{
     display: block;
     width: 100vw;
     height:400px ;
+    margin: 30px;
 }
 
-main > section > div#nome {
-    padding-top: 100px;
-    padding-left: 30px;
+main > section#apresentacao > div#nome {
+    padding-top: 50px;
+    
     
 }
 
-main > section > div#nome > h1#saldacao {
+main > section#apresentacao > div#nome > h1#saldacao {
     font-size: 2em;
 }
 
-main > section > div#nome > h1#vt {
+main > section#apresentacao > div#nome > h1#vt {
     color:rgb(198, 156, 109) ;
+    margin-left: 2px;
     font-size: 2em;
 }
 
-main > section > div#nome > p {
+main > section#apresentacao > div#nome > p {
     font-size: 1em;
-    margin-left: 10px;
+    
 }
 
-main > section > div#nome > a#contato {
+main > section#apresentacao > div#nome > a#contato {
     display: block;
     margin-left: 60px;
     margin-top: 15px;
@@ -113,14 +115,56 @@ main > section > div#nome > a#contato {
     font-size: 1.2em;
     font-weight: bolder;
     text-decoration: none;
-    color: rgb(222, 216, 205);
-    border: 1px solid rgb(222, 216, 205);
+    background-color: rgb(198, 156, 109) ;
+    color: rgb(21, 11, 11);
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.716);
+
 }
 
-main > section > div#nome > a#contato:hover {
+main > section#apresentacao > div#nome > a#contato:hover {
     background-color: rgb(222, 216, 205);
     color:rgb(21, 11, 11) ;
     border: 1px solid rgb(21, 11, 11) ;
 }
 
+main > section#apresentacao > div#nome > p#web{
+    font-size: 1.3em;
+    margin-top: 15px;
+    font-weight: bolder;
+    color: rgb(198, 156, 109) ;
+    
+}
 
+main > section#apresentacao > div#nome > p {
+    text-align: justify;
+    width: 350px;
+}
+
+main > section#apresentacao > div#nome > div#ico {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.379);
+    width: 200px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+main > section#apresentacao > div#nome > div#ico > img {
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 3px;
+    margin-left: 12px;
+
+}
+
+section#sobre{
+    margin: 30px;
+}
+
+section#sobre > h1#eu {
+    text-align: center;
+    margin: 30px;
+    font-size: 2em;
+}
+
+section#sobre > p {
+    padding-bottom: 10px;
+}
