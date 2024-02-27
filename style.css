@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(21, 11, 11);
+    background-color: rgb(35, 20, 20);
     color: rgb(222, 216, 205);
 }
 header {
@@ -15,8 +15,8 @@ header {
     position: fixed;
     top: 0;
     height: 50px;
-    width: 700px;
-    background-color:rgb(21, 11, 11) ;
+    width: 100vw;
+    background-color:rgb(35, 20, 20) ;
     border-bottom: 1px solid white;
 }
 
@@ -62,8 +62,10 @@ menu#itens > ul > li > a:hover {
 
 menu#itens > ul > p#lista {
     font-size: 2.3em;
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+    width: 400px;
     color: rgb(198, 156, 109);
 }
     

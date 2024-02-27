@@ -13,3 +13,7 @@ function novoTamanho(){
         itens.style.display = 'none'
     }
 }
+
+function esconderMenu(){
+    itens.style.display = 'none'
+}
