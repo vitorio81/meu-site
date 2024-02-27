@@ -11,26 +11,35 @@ body {
     color: rgb(222, 216, 205);
 }
 header {
+    display: block;
+    position: fixed;
+    top: 0;
     height: 50px;
-    width: 100vw;
+    width: 700px;
+    background-color:rgb(21, 11, 11) ;
     border-bottom: 1px solid white;
 }
 
 header > h1 {
+    display: block;
+    position: fixed;
     font-size: 1.5em;
-    margin-left: 125px;
-    padding-left: 30px;
+    left: 33%;
+    top: 0%;
     margin-top: 15px;
+
 }
 
 menu#itens {
-    position: absolute;
+    display: block;
+    position: fixed;
+    top: 0;
+    margin-top: 50px;
     list-style-type: none;
     display: none;
     text-align: center;
-    width: 94vw;
-    height: 100vh;
-    padding-top: 30px;
+    width: 98vw;
+    height: 570px;
     background-color: rgba(0, 0, 0, 0.812);
 }
 
@@ -53,6 +62,7 @@ menu#itens > ul > li > a:hover {
 
 menu#itens > ul > p#lista {
     font-size: 2.3em;
+    margin-top: 30px;
     margin-bottom: 50px;
     color: rgb(198, 156, 109);
 }
@@ -65,26 +75,23 @@ span#burguer {
     right: 0;
     cursor: pointer;
     margin-top: 15px;
-    padding-right: 40px;
+    margin-right:40px ;
 }
 
 span#tema{
     display: block;
     position: fixed;
     top: 0;
-    padding-left: 40px ;
+    margin-left:40px ;
     margin-top: 15px;
 }
 
 main > section#apresentacao{
-    display: block;
-    width: 100vw;
-    height:400px ;
     margin: 30px;
 }
 
 main > section#apresentacao > div#nome {
-    padding-top: 50px;
+    margin-top: 100px;
     
     
 }
@@ -115,16 +122,15 @@ main > section#apresentacao > div#nome > a#contato {
     font-size: 1.2em;
     font-weight: bolder;
     text-decoration: none;
-    background-color: rgb(198, 156, 109) ;
-    color: rgb(21, 11, 11);
+    background-color: rgb(156, 120, 79) ;
+    color: white;
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.716);
 
 }
 
 main > section#apresentacao > div#nome > a#contato:hover {
     background-color: rgb(222, 216, 205);
-    color:rgb(21, 11, 11) ;
-    border: 1px solid rgb(21, 11, 11) ;
+    color:rgb(156, 120, 79)  ;
 }
 
 main > section#apresentacao > div#nome > p#web{
@@ -166,5 +172,7 @@ section#sobre > h1#eu {
 }
 
 section#sobre > p {
-    padding-bottom: 10px;
+    text-indent: 20px;
+    line-height: 1.5em;
+    
 }
