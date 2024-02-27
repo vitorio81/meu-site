@@ -9,74 +9,86 @@ body {
     background-color: rgb(42, 1, 104);
     color: white;
 }
-
-header > h1 {
-    font-size: 2.5em;
-    margin: 20px;
+header {
     height: 50px;
     width: 100vw;
+    background-color: black;
 }
 
-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 20px;
+header > h1 {
+    font-size: 1.5em;
+    margin-left: 125px;
+    padding-left: 30px;
+    padding-top: 5px;
+    background-color: black;
 }
 
-span {
-    cursor: pointer;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 20px;
-}
-
-menu > ul {
+menu#itens {
     list-style-type: none;
-    left: 50%;
-}
-
-menu > ul > li > a {
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    color: rgb(42, 1, 104);
+    display: none;
     text-align: center;
-    border-bottom: 2px solid white;
-    border-radius: 5px;
-
+    width: vw;
+    height: 100vh;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.726);
 }
- main > section {
-    position: absolute;
-    margin-top: 10px;
- }
+
+menu#itens > ul > li {
+    padding: 10px;
+} 
+
+menu#itens > ul > li > a {
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+menu#itens > ul > p#lista {
+    font-size: 2.3em;
+    margin-bottom: 50px;
+}
+    
+
+span#burguer {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+span#tema{
+    display: block;
+    position: fixed;
+    top: 0;
+    padding-left: 40px ;
+    padding-top: 10px;
+}
+
+main > section{
+    display: block;
+    width: 100vw;
+    height:300px ;
+    background-color:rgba(0, 0, 255, 0.582);
+}
 
 main > section > div#nome {
-    margin: 20px;
+    padding-top: 100px;
+    padding-left: 30px;
+    
 }
 
 main > section > div#nome > h1 {
-    font-size: 2.5em;
+    font-size: 1.7em;
 }
 
 main > section > div#nome > p {
-    font-size: 1em;
-    text-align: justify;
+    font-size: 0.8em;
 }
 
 main > section > div#nome > a {
-    position: fixed;
-    text-decoration: none;
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px;
-    width: 90px;
-    background-color: white;
-    color: rgb(42, 1, 104);
-    border-radius: 5px;
-    font-size: 1.3em;
-    font-weight: bolder;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 15px;
 }
