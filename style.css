@@ -3,34 +3,35 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(42, 1, 104);
-    color: white;
+    background-color: rgb(21, 11, 11);
+    color: rgb(222, 216, 205);
 }
 header {
     height: 50px;
     width: 100vw;
-    background-color: black;
+    border-bottom: 1px solid white;
 }
 
 header > h1 {
     font-size: 1.5em;
     margin-left: 125px;
     padding-left: 30px;
-    padding-top: 5px;
-    background-color: black;
+    margin-top: 15px;
 }
 
 menu#itens {
+    position: absolute;
     list-style-type: none;
     display: none;
     text-align: center;
-    width: vw;
+    width: 94vw;
     height: 100vh;
     padding-top: 30px;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgba(0, 0, 0, 0.812);
 }
 
 menu#itens > ul > li {
@@ -40,11 +41,20 @@ menu#itens > ul > li {
 menu#itens > ul > li > a {
     text-decoration: none;
     font-size: 2.5em;
+    color: rgb(222, 216, 205);
+}
+
+menu#itens > ul > li > a:hover {
+    box-shadow: 2px 2px 7px rgb(222, 216, 205);
+    padding: 13px;
+    border-radius: 5px;
+    font-weight: bolder;
 }
 
 menu#itens > ul > p#lista {
     font-size: 2.3em;
     margin-bottom: 50px;
+    color: rgb(198, 156, 109);
 }
     
 
@@ -54,7 +64,7 @@ span#burguer {
     top: 0;
     right: 0;
     cursor: pointer;
-    padding-top: 10px;
+    margin-top: 15px;
     padding-right: 40px;
 }
 
@@ -63,14 +73,13 @@ span#tema{
     position: fixed;
     top: 0;
     padding-left: 40px ;
-    padding-top: 10px;
+    margin-top: 15px;
 }
 
 main > section{
     display: block;
     width: 100vw;
-    height:300px ;
-    background-color:rgba(0, 0, 255, 0.582);
+    height:400px ;
 }
 
 main > section > div#nome {
@@ -79,16 +88,39 @@ main > section > div#nome {
     
 }
 
-main > section > div#nome > h1 {
-    font-size: 1.7em;
+main > section > div#nome > h1#saldacao {
+    font-size: 2em;
+}
+
+main > section > div#nome > h1#vt {
+    color:rgb(198, 156, 109) ;
+    font-size: 2em;
 }
 
 main > section > div#nome > p {
-    font-size: 0.8em;
+    font-size: 1em;
+    margin-left: 10px;
 }
 
-main > section > div#nome > a {
-    position: absolute;
+main > section > div#nome > a#contato {
+    display: block;
     margin-left: 60px;
     margin-top: 15px;
+    padding: 10px;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(222, 216, 205);
+    border: 1px solid rgb(222, 216, 205);
 }
+
+main > section > div#nome > a#contato:hover {
+    background-color: rgb(222, 216, 205);
+    color:rgb(21, 11, 11) ;
+    border: 1px solid rgb(21, 11, 11) ;
+}
+
+
