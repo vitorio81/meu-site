@@ -180,3 +180,18 @@ section#sobre > p {
     line-height: 1.5em;
     
 }
+
+main > section#projetos {
+    margin: 30px;
+}
+
+main > section#projetos > h1#tpro{
+    text-align: center;
+    font-size: 2em;
+    margin: 50px;
+}
+
+main > section#projetos > div#imgp  {
+    width: 200px;
+    height: 100;
+}
