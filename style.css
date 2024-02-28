@@ -90,7 +90,7 @@ span#tema{
 }
 
 main > section#apresentacao{
-    margin: 30px;
+    margin-left: 30px;
 }
 
 main > section#apresentacao > div#nome {
@@ -169,9 +169,11 @@ section#sobre{
 }
 
 section#sobre > h1#eu {
+    border-bottom: 1px solid white;
     text-align: center;
     margin: 30px;
     font-size: 2em;
+    color: rgb(198, 156, 109);
 }
 
 section#sobre > p {
@@ -182,16 +184,90 @@ section#sobre > p {
 }
 
 main > section#projetos {
-    margin: 30px;
+    margin: 10px;
+    
 }
 
 main > section#projetos > h1#tpro{
+    border-bottom: 1px solid white;
     text-align: center;
     font-size: 2em;
     margin: 50px;
+    color: rgb(198, 156, 109);
 }
 
-main > section#projetos > div#imgp  {
-    width: 200px;
-    height: 100;
+main > section#projetos > div.imgp {
+    margin: 30px;
 }
+
+main > section#projetos > div.imgp > img {
+    width: 80vw;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white
+    
+}
+
+ain > section#projetos > div.imgp > img:hover{
+    float: left 5px;
+    cursor: pointer;
+}
+
+main > section#redes {
+        margin: 30px;
+    }
+
+    main > section#redes > h1#hredes{
+        border-bottom: 1px solid white;
+        text-align: center;
+        margin: 50px ;
+        color: rgb(198, 156, 109);
+        font-size: 2em;
+    }
+
+    main > section#redes > div#iredes > ul {
+        list-style-type: none;
+        text-align: center;
+
+    }
+
+    main > section#redes > div#iredes > ul > li{
+        display: block;
+        display: inline-block;
+        margin: 30px;
+        
+    }
+
+
+    main > section#redes > div#iredes > ul > li > a {
+        text-decoration: none;
+        color: rgb(230, 216, 201);
+        
+    }
+    main > section#redes > div#iredes > ul > li:hover{
+        cursor: pointer;
+    }
+    
+
+    main > section#redes > div#iredes > ul > li > p#pe {
+        margin-left: 100px;
+    }
+
+    main > section#redes > div#iredes > ul > li > p#pw {
+        margin-left: 25px;
+    }
+
+    main > section#redes > div#iredes > ul > li > p#pi {
+        margin-right: 10px;
+    }
+    main > section#redes > div#iredes > ul > li > p#pl{
+        margin-left: 10px;
+    }
+
+    main > section#redes > div#iredes > ul > li > p#pg{
+        margin-left: 15px;
+    }
+
+
+ 
+        
