@@ -89,19 +89,29 @@ span#tema{
     margin-top: 15px;
 }
 
-main > section#apresentacao.animatioaparecer{
-    margin-left: 30px;
-    animation: aparecer 3s linear;
+.animacao {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
 }
 
-@keyframes aparecer{
-    from {opacity:0}
-    to {opacity: 1;}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 2s;
 }
+
+main > section#apresentacao{
+    margin-left: 30px;
+}
+
 
 
 main > section#apresentacao > div#nome {
     margin-top: 100px;
+    margin-right: 130px;
     
     
 }
@@ -171,7 +181,7 @@ main > section#apresentacao > div#nome > div#ico > img {
 
 }
 
-section#sobre.animatioaparecer{
+section#sobre{
     margin: 30px;
     animation: aparecer 3s linear;
 }
@@ -190,14 +200,8 @@ section#sobre > p {
     line-height: 1.5em;
 }
 
-section#projetos, section#redes {
-    transition: opacity 1s ease, visibility 1s ease;
-}
 
-
-
-
-main > section#projetos > h1#tpro{
+main > section.animacao  > h1{
     border-bottom: 1px solid white;
     text-align: center;
     font-size: 2em;
@@ -205,26 +209,15 @@ main > section#projetos > h1#tpro{
     color: rgb(198, 156, 109);
 }
 
-main > section#projetos.animatioPosition {
+main > section{
     position: relative;
     margin: 50px;
     text-align: center;
-    animation: position .5s linear;
 
 }
-@keyframes position {
-    0%{
-        top: 0%;
-        left: -30%;
-    }
 
-    100%{
-        top: 0%;
-        left:3%;
-    }
-}
 
-main > section#projetos > a > img {
+main > section.animacao > div.logos > div > a > img {
     margin-bottom: 30px;
     width: 200px;
     height: 130px;
@@ -234,24 +227,23 @@ main > section#projetos > a > img {
 }
 
 
-main > section#projetos > a > img::after {
+main > section.animacao > div.logos > div > a > img::after {
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 black;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-main > section#projetos> a > img:hover{
+main > section.animacao > div.logos > div > a > img:hover{
    transform: scale(1.25,1.25);
 }
 
 
-main > section#redes.animatioPosition {
+main > section#redes {
     position: relative;
     margin: 30px;
-    animation: position .5s linear;
 }
 
-main > section#redes > h1#hredes{
+main > section#redes > h1{
     border-bottom: 1px solid white;
     text-align: center;
     margin: 50px ;
@@ -271,7 +263,7 @@ main > section#redes > div#iredes > ul > li{
         display: block;
         display: inline-block;
         margin: 30px;
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        
         
 }
 
@@ -280,7 +272,8 @@ main > section#redes > div#iredes > ul > li::after {
     height: 80%;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 black;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 main > section#redes > div#iredes > ul > li:hover{
@@ -296,7 +289,7 @@ main > section#redes > div#iredes > ul > li > a {
 main > section#redes > div#iredes > ul > li:hover{
         cursor: pointer;
 }
-    
+
 
 
 

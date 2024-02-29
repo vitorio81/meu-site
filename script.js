@@ -18,4 +18,19 @@ function esconderMenu(){
     itens.style.display = 'none'
 }
 
+const myObserver = new IntersectionObserver ((observar) => {
+    observar.forEach((entry)=> {
+        if (entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+
+})
+
+const elements = document.querySelectorAll('.animacao')
+
+elements.forEach((element) => myObserver.observe(element))
+
 
