@@ -229,13 +229,14 @@ main > section#redes {
         list-style-type: none;
         text-align: center;
 
+
     }
 
     main > section#redes > div#iredes > ul > li{
         display: block;
         display: inline-block;
         margin: 30px;
-        
+        text-align: center;
     }
 
 
