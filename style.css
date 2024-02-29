@@ -256,6 +256,8 @@ main > section#redes {
 
     main > section#redes > div#iredes > ul > li > p#pw {
         margin-left: 25px;
+        text-decoration: none;
+        color:rgb(230, 216, 201) ;
     }
 
     main > section#redes > div#iredes > ul > li > p#pi {
