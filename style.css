@@ -18,6 +18,7 @@ header {
     width: 100vw;
     background-color:rgb(23, 13, 13) ;
     border-bottom: 1px solid white;
+    z-index: 1000;
 }
 
 header > h1 {
@@ -39,6 +40,7 @@ menu#itens {
     width: 98vw;
     height: 600px;
     background-color: rgba(0, 0, 0, 0.812);
+    z-index: 1000;
 }
 
 menu#itens > ul > li {
@@ -187,6 +189,12 @@ section#sobre > p {
     text-indent: 20px;
     line-height: 1.5em;
 }
+
+section#projetos, section#redes {
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+
 
 
 main > section#projetos > h1#tpro{

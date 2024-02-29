@@ -17,3 +17,5 @@ function novoTamanho(){
 function esconderMenu(){
     itens.style.display = 'none'
 }
+
+
