@@ -14,9 +14,6 @@ function novoTamanho(){
     }
 }
 
-function esconderMenu(){
-    itens.style.display = 'none'
-}
 
 const myObserver = new IntersectionObserver ((observar) => {
     observar.forEach((entry)=> {
