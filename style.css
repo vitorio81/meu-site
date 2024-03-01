@@ -237,7 +237,7 @@ main > section.animacao > div.logos > div > a > img::after {
 }
 
 main > section.animacao > div.logos > div > a > img:hover{
-   transform: scale(1.25,1.25);
+   transform: scale(1.15,1.15);
 }
 
 
