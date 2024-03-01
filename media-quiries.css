@@ -25,6 +25,8 @@
 
 }
 
+
+
 @media screen and (min-width: 992px) {
     
     main {
@@ -83,6 +85,18 @@
         margin-left: 150px;
         width:800px;
         
+    }
+
+    main > section#apresentacao > div#nome > h1#saldacao {
+        font-size:3em ;
+    }
+
+    main > section#apresentacao > div#nome > h1#vt{
+        font-size: 3em;
+    }
+
+    main > section#apresentacao > div#nome > p{
+        margin-left: 10px;
     }
 
     main > section.animacao > div.logos > div {
