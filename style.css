@@ -6,9 +6,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --body-color: rgb(23, 13, 13);
+    --font-color: rgb(222, 216, 205);
+    --h1-color: rgb(198, 156, 109);
+    --header-color:rgb(222, 216, 205);
+}
+
+.dark-mode:root{
+    --body-color: rgb(222, 216, 205);
+    --font-color:rgb(161, 124, 82);
+    --h1-color:rgb(23, 13, 13);
+    --header-color:rgb(222, 216, 205);
+}
+
 body {
-    background-color: rgb(23, 13, 13);
-    color: rgb(222, 216, 205);
+    background-color: var(--body-color);
+    color: var(--font-color);
+    text-shadow: 0.5px 0.5px 1px var(--h1-color) ;
    
 }
 header {
@@ -19,6 +34,7 @@ header {
     background-color:rgb(23, 13, 13) ;
     border-bottom: 1px solid white;
     z-index: 1000;
+    color: var(--header-color);
 }
 
 header > h1 {
@@ -80,12 +96,21 @@ span#burguer {
     margin-right:40px ;
 }
 
+span#burguer:hover{
+    transform: scale(1.25,1.25);
+}
+
 span#tema{
     display: block;
     position: fixed;
     top: 0;
     margin-left:40px ;
     margin-top: 15px;
+}
+
+span#tema:hover {
+    cursor: pointer;
+    transform: scale(1.25,1.25);
 }
 
 .animacao {
@@ -119,7 +144,7 @@ main > section#apresentacao > div#nome > h1#saldacao {
 }
 
 main > section#apresentacao > div#nome > h1#vt {
-    color:rgb(198, 156, 109) ;
+    color:var(--h1-color);
     font-size: 2em;
     margin-left: 2px;
     text-align: left;
@@ -150,13 +175,14 @@ main > section#apresentacao > div#nome > a#contato {
 main > section#apresentacao > div#nome > a#contato:hover {
     background-color: rgb(222, 216, 205);
     color:rgb(156, 120, 79)  ;
+    border: 1px solid rgb(23, 13, 13);
 }
 
 main > section#apresentacao > div#nome > p#web{
     font-size: 1.3em;
     margin-top: 15px;
     font-weight: bolder;
-    color: rgb(198, 156, 109) ;
+    color: var(--h1-color) ;
     
 }
 
@@ -166,7 +192,7 @@ main > section#apresentacao > div#nome > p {
 }
 
 main > section#apresentacao > div#nome > div#ico {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.379);
+    border-bottom: 1px solid var(--font-color);
     width: 200px;
     margin-left: 13px;
     margin-top: 10px;
@@ -186,12 +212,12 @@ section#sobre{
 }
 
 section#sobre > h1#eu {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--font-color);
     text-align: center;
     margin: 30px;
     padding-top: 60px;
     font-size: 2em;
-    color: rgb(198, 156, 109);
+    color: var(--h1-color);
     text-shadow: 1px 1px rgba(255, 255, 255, 0.868);
 }
 
@@ -203,11 +229,11 @@ section#sobre > p {
 
 
 main > section.animacao  > h1{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--font-color);
     text-align: center;
     font-size: 2em;
     margin: 50px;
-    color: rgb(198, 156, 109);
+    color: var(--h1-color);
 }
 
 main > section#projetos{
@@ -248,17 +274,17 @@ main > section#redes {
 }
 
 main > section.animacao > h1{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--font-color);
     text-align: center;
     margin: 50px ;
-    color: rgb(198, 156, 109);
+    color: var(--h1-color);
     font-size: 2em;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.868);
     
 }
 
 main > section#redes > div#iredes {
-    border: 1px solid white;
+    border: 1px solid var(--font-color);
 }
 
 main > section#redes > div#iredes > ul {
@@ -271,7 +297,7 @@ main > section#redes > div#iredes > ul {
 
 main > section#redes > div#iredes > ul > li{
     display: inline-block;
-        margin: 30px;
+    margin: 30px;
         
         
 }
@@ -293,7 +319,7 @@ main > section#redes > div#iredes > ul > li:hover{
 
 main > section#redes > div#iredes > ul > li > a {
         text-decoration: none;
-        color: rgb(230, 216, 201);
+        color: var(--font-color);
         
 }
 

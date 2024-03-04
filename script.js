@@ -1,9 +1,16 @@
+var cont = 1
 function clickMenu() {
     if (itens.style.display == 'block') {
         itens.style.display = 'none'
     } else {
         itens.style.display = 'block'
     }
+}
+
+const $html = document.querySelector('html')
+
+function clickDark() {
+    $html.classList.toggle('dark-mode')
 }
 
 function novoTamanho(){
