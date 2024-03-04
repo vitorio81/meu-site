@@ -176,6 +176,7 @@ main > section#apresentacao > div#nome > a#contato:hover {
     background-color: rgb(222, 216, 205);
     color:rgb(156, 120, 79)  ;
     border: 1px solid rgb(23, 13, 13);
+    transform: scale(1.10,1.10);
 }
 
 main > section#apresentacao > div#nome > p#web{
